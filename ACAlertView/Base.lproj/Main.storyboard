@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5v-wh-V2i">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.53090221609999999" blue="0.43609781910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="lOS-Iw-nat">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="30" id="ock-OU-b3a">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="弹出框">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lOS-Iw-nat"/>
+                                        <exclude reference="ock-OU-b3a"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="lOS-Iw-nat"/>
+                                        <include reference="ock-OU-b3a"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="alertViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DqR-AE-79o"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vge-f5-KAo">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vge-f5-KAo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="158" id="6mp-HP-Rle">
+                                <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="Vge-f5-KAo" secondAttribute="trailing" constant="145" id="L4E-b6-n1Y">
+                                <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="J5v-wh-V2i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hwd-xl-CQD"/>
+                            <constraint firstItem="J5v-wh-V2i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kiR-yy-15S"/>
+                            <constraint firstItem="Vge-f5-KAo" firstAttribute="top" secondItem="J5v-wh-V2i" secondAttribute="bottom" constant="33" id="wzg-gh-sRG">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="J5v-wh-V2i"/>
+                                <exclude reference="Vge-f5-KAo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6mp-HP-Rle"/>
+                                <exclude reference="L4E-b6-n1Y"/>
+                                <exclude reference="wzg-gh-sRG"/>
+                                <exclude reference="hwd-xl-CQD"/>
+                                <exclude reference="kiR-yy-15S"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="J5v-wh-V2i"/>
+                                <include reference="Vge-f5-KAo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6mp-HP-Rle"/>
+                                <include reference="L4E-b6-n1Y"/>
+                                <include reference="wzg-gh-sRG"/>
+                                <include reference="hwd-xl-CQD"/>
+                                <include reference="kiR-yy-15S"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="361.5"/>
+        </scene>
+    </scenes>
+</document>
