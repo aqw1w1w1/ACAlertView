@@ -34,6 +34,9 @@
     [alertView show];
     NSLog(@"test");
     NSLog(@"dev_1");
+
+    NSLog(@"主分支修改");
+    NSLog(@"dev_2");
 }
 
 #pragma mark - ACAlertViewDelegate
