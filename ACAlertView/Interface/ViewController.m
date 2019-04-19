@@ -32,6 +32,7 @@
     alertView.buttonTitles = @[@"关闭", @"确定"];
     
     [alertView show];
+    NSLog(@"主分支修改");
 }
 
 #pragma mark - ACAlertViewDelegate
